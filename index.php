@@ -9,8 +9,8 @@
  *   a protection module by DIY in this code. I am sorry that I would
  *   not add it in this version.
  * 
- * Currently the program only supports less than 1000 codes.
- *   If you want to enlarge it, please change the code format (6 digit) in get_code().
+ * Currently the program only supports less than 1000 codes (3 digits of ID).
+ *   If you want to enlarge it, please change the code format (6 digits) in get_code().
  * 
  * Please note that the UI template SHOULD be customized by yourself.
  *   No need to preserve Bootstrap; however the current design is a Bootstrapped one.
