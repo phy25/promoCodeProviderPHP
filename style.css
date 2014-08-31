@@ -1,0 +1,51 @@
+h1, .h1 {font-size: 2em;}
+h2, .h2 {font-size: 1.5em;}
+h1, h2, h3 {margin-top: 0.5em;margin-bottom: 0.5em;}
+form{display:inline-block;}
+.wb_inline{display:inline-block;}
+@media (min-width: 992px){
+	body{font-size:2em;}
+	.navbar{font-size:0.8em;}
+}
+@media screen and (min-width: 768px){
+	.jumbotron {padding-top: 1.5em;padding-bottom: 1.5em;}
+	.jumbotron{font-size:16px;}
+	.jumbotron h1{font-size: 34px;}
+	.navbar {border-radius: 0;}
+}
+@media screen and (max-width: 768px){
+	.jumbotron {padding-top: 1em;padding-bottom: 1em;}
+	.jumbotron{font-size:14px;}
+	.jumbotron h1{font-size: 26px;}
+	.hidden-xs{display:none !important;}
+	.form-inline .form-group{display: inline-block;margin-bottom: 0;vertical-align: middle;}
+}
+
+.ds-replybox form{width:100% !important;}
+
+.buynow-slogan{font-size:1.5em; text-align:center;padding:2em 0 3em;}
+footer{margin-top:1em;}
+blockquote p{font-size:1em;}
+.label-small{font-size:.5em;}
+
+table.center, table.center th{text-align: center;}
+table.center>thead>tr>th, table.center>tbody>tr>th, table.center>tfoot>tr>th, table.center>thead>tr>td, table.center>tbody>tr>td, table.center>tfoot>tr>td{vertical-align: middle;}
+
+/* Color */
+.navbar-default {background-color: #C5BF5A;border-color: #736D0B;border-width: 0 0 1px;}
+.navbar-default .navbar-brand {color: #FFF;font-size:1.2em;}
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {color: #FFFDDD;background-color: transparent;}
+
+.navbar-default .navbar-nav>li>a {color: #FFF;}
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus{color: #E0DB81;background-color: #AAA439;}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus{color: #E0DB81;background-color: #AAA439;}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {border-color: #736D0B;}
+
+.btn-primary {color: #ffffff;background-color: #AAA439;border-color: #736D0B;}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {color: #ffffff;
+background-color: #8E881F;border-color: #736D0B;}
+a {color: #8E881F;text-decoration: none;}
+a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {border-color: #8E881F;}
+a:hover, a:focus {color: #736D0B;text-decoration: underline;}
