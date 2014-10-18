@@ -3,20 +3,21 @@
  * promoCodeProviderPHP by Phy25
  *
  * Please change the following settings before you put it into operation.
- * Or your promo code can be easily revealed.
+ * Or your promo code can be EASILY REVEALED.
  *
  * If you are serious about the risk of "Violent Test", you have to add
  *   a protection module by DIY in this code. I am sorry that I would
  *   not add it in this version.
  * 
  * Currently the program only supports less than 1000 codes (3 digits of ID).
- *   If you want to enlarge it, please change the code format (6 digits) in get_code().
+ *   If you want to enlarge it, please change the code format (currently 6 digits) in get_code().
  * 
  * Please note that the UI template SHOULD be customized by yourself.
  *   No need to preserve Bootstrap; however the current design is a Bootstrapped one.
  */
 /*
  * HASH is used to generate your promo code. Can be anything but it should be long enough.
+ * Keep it safe! Or your promo code can be easily revealed.
  */
 define('HASH', 'YOUR HASH');
 
@@ -291,8 +292,7 @@ if($pagetype == 'adminedit'){
 if($pagetype == 'code'){
 ?>
 	<?php if($loggedin){ ?>
-	<div class="alert alert-warning">
-		<p>
+	<div class="panel panel-warning"><div class="panel-body">
 			<form action="./" method="POST" id="form-usage">
 			<?php if($cur_code_usage === false || $cur_code_usage[1] === '0'){ ?>
 			请先确认下面的使用条款。
@@ -306,8 +306,7 @@ if($pagetype == 'code'){
 			<input type="hidden" name="action" value="modify_usage" />
 			<input type="hidden" name="code" value="<?php echo $c; ?>" />
 			</form>
-		</p>
-	</div>
+	</div></div>
 	<?php } ?>
 	<h1>优惠码 <?php echo $c; ?> <?php if($cur_code_usage === false || $cur_code_usage[1] === '0'){ ?><span class="label label-success label-small">未使用</span><?php }else{ ?><span class="label label-danger label-small">已使用</span><?php } ?></h1>
 	<p>优惠项目：<strong><?php echo $cur_code[2]; ?></strong> <small>（请注意阅读备注）</small></p>
